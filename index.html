@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>WeekFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="controls">
+            <button id="zoomOut" class="control-btn">-</button>
+            <button id="todayBtn" class="control-btn today-btn">오늘</button>
+            <button id="zoomIn" class="control-btn">+</button>
+        </div>
+        
+        <div class="calendar-grid">
+            <div class="weekdays">
+                <div class="weekday">일</div>
+                <div class="weekday">월</div>
+                <div class="weekday">화</div>
+                <div class="weekday">수</div>
+                <div class="weekday">목</div>
+                <div class="weekday">금</div>
+                <div class="weekday">토</div>
+            </div>
+            <div id="calendarDays" class="days"></div>
+        </div>
+    </div>
+
+    <!-- 인라인 이모지 편집용 텍스트박스 (숨김) -->
+    <input type="text" id="inlineEmojiInput" class="inline-emoji-input hidden" placeholder="😊🎉🍕..." />
+
+    <script src="script.js"></script>
+</body>
+</html>
