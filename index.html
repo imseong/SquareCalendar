@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>WeekFlow</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
     <div class="calendar-container">
+        <button id="helpBtn" class="help-btn">?</button>
         <div class="controls">
             <button id="zoomOut" class="control-btn">-</button>
             <button id="todayBtn" class="control-btn today-btn">오늘</button>
             <button id="zoomIn" class="control-btn">+</button>
         </div>
-        
         <div class="calendar-grid">
             <div class="weekdays">
                 <div class="weekday">일</div>
@@ -27,10 +27,14 @@
             <div id="calendarDays" class="days"></div>
         </div>
     </div>
-
-    <!-- 인라인 이모지 편집용 텍스트박스 (숨김) -->
-    <input type="text" id="inlineEmojiInput" class="inline-emoji-input hidden" placeholder="😊🎉🍕..." />
-
-    <script src="script.js"></script>
+    <div id="helpTooltip" class="help-tooltip hidden">
+        <div class="help-title">월 구분 없이 이어지는 주간 달력</div>
+        <div class="help-items">
+            <div>스크롤/스와이프 — 주 이동</div>
+            <div>+/- — 스케일 조절</div>
+            <div>오늘 — 오늘로 이동</div>
+        </div>
+    </div>
+    <script src="script.js?v=3"></script>
 </body>
 </html>
